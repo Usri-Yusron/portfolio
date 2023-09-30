@@ -1,0 +1,1 @@
+alert("untuk pengalaman yg lebih baik, gunakan handphone anda!")
