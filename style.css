@@ -10,7 +10,7 @@ body {
 /* masuk ke bagian header */
 header.navbar-container {
     background-color: #B4B4B3;
-    max-width: 1200px;
+    max-width: 100%;
     width: 100%;
     display: flex;
     margin-inline: auto;
