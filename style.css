@@ -130,6 +130,7 @@ header.navbar-container .navbar-list li:hover a {
 /* animasi logo selesai */
 /* bagian header navbar selesai */
 
+/* bagian main */
 main {
     max-width: 1200px;
     margin-inline: auto;
@@ -180,6 +181,7 @@ aside {
     position: fixed;
     inset-block: 0;
     inset-inline-end: 0;
+    z-index: 99999;
 }
    
 aside .social-media {
@@ -217,6 +219,7 @@ aside .social-media li a:hover {
 }
 /* bagian aside selesai */
 
+/* bagian sertifikat */
 .sertif-teks h2 {
     text-align: center;
     font-size: 1.5rem;
@@ -227,6 +230,7 @@ aside .social-media li a:hover {
     margin-inline: auto;
     padding: 3rem 0;
     flex: 1;
+    margin-bottom: 50px;
    
     display: flex;
     align-items: center;
@@ -249,7 +253,150 @@ aside .social-media li a:hover {
     width: 250px;
     cursor: pointer;
 }
+/* bagian sertifikat selesai */
 
+/* bagian projek */
+.projek-teks h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    position : relative;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-warp : warp;
+    padding : 30px;  
+}
+
+.container-card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+  
+.card {
+    position: relative;
+    max-width : 300px;
+    height : 215px;  
+    background-color : #fff;
+    margin : 30px 10px;
+    padding : 20px 15px;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+}
+
+.container .card:hover {
+    height : 320px;    
+}
+   
+.container .card .image {
+    position : relative;
+    width : 300px;
+    height : 260px;  
+    top : -40%;
+    left: 8px;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+}
+  
+.container .card .image img {
+    max-width : 100%;
+    border-radius : 15px;
+}
+  
+.container .card .content {
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+}
+  
+.container .card:hover .content {
+     margin-top : 30px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s;
+    
+}
+
+/* button super sus */
+.content a {
+    text-decoration: none;
+}
+
+button {
+  display: flex;
+  margin-left: 80px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+button:active {
+  transform: scale(.9);
+  transition: all 100ms ease;
+}
+
+button svg {
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all .5s ease;
+  transition-delay: 300ms;
+}
+
+button:hover svg {
+  transform: scale(3) translate(50%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+button:hover .now {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+button:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
+/* bagian code selesai */
+
+/* bagian footer */
 footer {
     padding: 8.5px;
     height: 50px;
@@ -313,6 +460,10 @@ footer {
         color: black;
     }
     .content-sertif .sertifikat{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .container .container-card{
         flex-direction: column;
         gap: 2rem;
     }
